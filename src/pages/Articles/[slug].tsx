@@ -30,7 +30,7 @@ const BlogPost: NextPage<BlogPostProps> = ({ data, mdxSource }) => {
   return (
     <Layout {...metaData} as='main' title={data.title} description={data.summary}>
       <article>
-        <figure className='w-full pt-0'>
+        <figure className='w-full Article-Main-Image pt-0'>
           <CustomImage
             src={data.thumbnail ?? '/static/default-thumbnail.jpg'}
             alt={data.title}
@@ -61,7 +61,7 @@ const BlogPost: NextPage<BlogPostProps> = ({ data, mdxSource }) => {
 
         <section
           className={twclsx(
-            'prose md:prose-lg dark:prose-invert py-20',
+            'prose min-w-full md:prose-lg dark:prose-invert py-20',
             'prose-a:no-underline prose-a:font-semibold prose-a:text-primary-4'
           )}
         >

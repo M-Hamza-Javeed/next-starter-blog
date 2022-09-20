@@ -9,8 +9,8 @@ export const APP_ROUTE: Array<AppRoute> = [
     href: '/'
   },
   {
-    children: 'Blog',
-    href: '/blog'
+    children: 'Articles',
+    href: '/Articles'
   },
   {
     children: 'Tags',

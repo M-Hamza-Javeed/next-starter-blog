@@ -20,11 +20,15 @@
   }
 
   body {
-    @apply antialiased font-primary bg-main-1 dark:bg-main-5 text-main-4 dark:text-main-1.5;
+    @apply antialiased font-primary dark:bg-main-5 text-main-4 dark:text-main-1.5;
+  }
+
+  .Article-Main-Image > span {
+    min-width: 100%;
   }
 
   .layout {
-    @apply w-[86%] md:max-w-2xl mx-auto;
+    @apply w-[86%] md:max-w-4xl mx-auto;
   }
 
   :is(h1, h2) ~ p:first-of-type {

@@ -17,7 +17,7 @@ const NotFoundPage: NextPage = () => {
         <h1 className={twclsx('text-center')}>404 | Not Found</h1>
         <p className={twclsx('text-center max-w-prose', 'my-4')}>
           The page you are looking for, are not found, if you find this was a mistake, please contact us at{' '}
-          <em>company@mail.cs</em>
+          <em>{process.env.NEXT_PUBLIC_Email}</em>
         </p>
         <UnderlineLink href='/'>Back To Home</UnderlineLink>
       </section>
